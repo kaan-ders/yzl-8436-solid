@@ -9,6 +9,7 @@ namespace Solid.SR
     public interface ILoglama
     {
         void LogYaz(string mesaj);
+        //void OpenConnection(); YANLIŞŞŞ!!!!
     }
 
     public class LoglamaTxt : ILoglama
@@ -17,6 +18,11 @@ namespace Solid.SR
         {
             File.AppendAllText(Environment.CurrentDirectory + "\\Log.txt", mesaj + Environment.NewLine);
         }
+
+        //public void Deneme()
+        //{
+
+        //}
     }
 
     public class LoglamaDb : ILoglama
@@ -44,6 +50,11 @@ namespace Solid.SR
             //çivi tablete'e log yaz
             throw new NotImplementedException();
         }
+    }
+
+    public class Deneme
+    {
+
     }
 
 

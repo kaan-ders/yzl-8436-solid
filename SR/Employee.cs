@@ -28,7 +28,7 @@ namespace Solid.SR
         //YANLIŞŞŞ
         //private Loglama loglama = new Loglama();
 
-        private ILoglama loglama = new LoglamaCiviYazisi();
+        private ILoglama loglama = new LoglamaElastic();
 
         public void Create()
         {
